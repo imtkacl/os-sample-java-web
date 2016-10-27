@@ -1,0 +1,1 @@
+java -jar -Djavax.net.ssl.keyStore=broker.ks -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStore=broker.ks amqutil-0.1.0.jar produce 1000 --destination Performance.test --url "failover:(ssl://broker-tcp-ssl.amq-s2i-poc.svc.cluster.local:61617)" --user amq-user --password password --loglevel debug
